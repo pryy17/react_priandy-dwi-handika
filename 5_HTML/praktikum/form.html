@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form action="welcome.html" id="submitForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" required>
+        <br>
+        <br>
+        <!-- radio button -->
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+        <br>
+        <br>
+        <!-- select -->
+        <label for="cars">Nasionality:</label>
+        <br>
+        <select id="cars" name="cars" required>
+            <option value="Indonesia">Indonesia</option>
+            <option value="inggris">Inggris</option>
+            <option value="jepang">Iepang</option>
+            <option value="amerika">Amerika</option>
+        </select>
+        <br>
+        <br>
+        <!-- check box -->
+        <label for="cars">Language Spoken:</label>
+        <br />
+        <input type="checkbox" id="Language1" name="option[]" value="indonesia">
+        <label for="Language1">Bahasa Indonesia</label><br>
+        <input type="checkbox" id="Language2" name="option[]" value="english" required>
+        <label for="Language2">English</label><br>
+        <input type="checkbox" id="Language3" name="option[]" value="otherLang" >
+        <label for="Language2">Other</label>
+        <br>
+        <br>
+
+        <!-- text box -->
+        <label for="cars">Bio:</label>
+        <br>
+        <textarea rows="4" cols="50" name="comment" form="submitForm" required></textarea>
+
+        <!-- button submit-->
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+
+</html>
