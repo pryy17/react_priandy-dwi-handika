@@ -18,16 +18,16 @@ html (hyper text markup language) adalah sebuah standar yang di gunakan luas unt
 
   **struktur halaman HTML**
 
-    <html>
-    <head>
-        <title> title page html </title>
-    </head>
-    <body>
-        <div>
-    		content html
-    	</div>
-    </body>
-    </html>
+        <html>
+            <head>
+                <title> title page html </title>
+            </head>
+        <body>
+            <div>
+    		    content html
+    	    </div>
+        </body>
+        </html>
 
 **dokumentasi**
 
