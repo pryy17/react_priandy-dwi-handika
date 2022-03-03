@@ -49,7 +49,7 @@ article > h1 {
 
 .content {
     padding: 38px 20px;
-    border: solid lightblue 0.1px;
+    border-bottom: solid lightblue 0.5px;
 
 }
 
@@ -64,13 +64,14 @@ footer {
     background-color: black;
     text-align: center;
     height: 5em;
-    width: auto;
+    width: 100%;
     font-size: 0.7em;
-    
-    
+    display: table;
 }
 
 footer > p {
+    display: table-cell;
     color: white;
     padding: 1.5em;
+    vertical-align: middle;
 }
