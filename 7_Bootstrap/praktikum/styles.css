@@ -2,6 +2,10 @@
     margin-left: 25% !important;
 }
 
+.elogo {
+    color: #6DC458;
+}
+
 .card-group {
     width: 70% !important;
     height: auto !important;
@@ -16,4 +20,45 @@
 
 .fs-7 {
     font-size: 0.9em !important;
+}
+
+#main-content {
+    margin: 10em 0;
+}
+
+.list-benefit > li{
+    margin-top: 0.7em;
+}
+
+#footer {
+    background-color: #2A2C30;
+    color: white;
+    font-size: 9px;
+}
+
+.ui-design {
+    letter-spacing: 2px;
+}
+
+.row-support {
+    padding: 4.5em 5em;
+}
+
+.row-support > .col > ul > li {
+    margin-top: 0.7em;
+}
+
+.container-copyright {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1.7em 0;
+}
+
+.arrow-button {
+    position: absolute !important;
+    font-size: 30px;
+    z-index: 30;
+    right: 10px;
+    bottom: -38.5em;
 }
