@@ -1,0 +1,19 @@
+.ms-5 {
+    margin-left: 25% !important;
+}
+
+.card-group {
+    width: 70% !important;
+    height: auto !important;
+    margin: 5em auto !important;
+
+}
+
+.card-img-top {
+    width: 3em !important;
+    height: auto !important;
+}
+
+.fs-7 {
+    font-size: 0.9em !important;
+}

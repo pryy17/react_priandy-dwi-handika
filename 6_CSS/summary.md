@@ -1,7 +1,6 @@
 # CSS
 
-**Cascading style sheets** adalah code yang dapat menghias halaman web dan mengatur posisi pada halaman web
-
+**Cascading style sheets** adalah code yang dapat menghias halaman web dan mengatur posisi pada halaman web, bahasa Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML. CSS berfungsi untuk memisahkan konten dari tampilan visualnya di situs.CSS menggunakan bahasa Inggris sederhana berbasis syntax yang dilengkapi dengan sekumpulan rule yang mengaturnya.HTML tidak dibuat untuk menerapkan elemen style, hanya markup halaman saja. HTML dirancang semata-mata untuk mendeskripsikan konten.
 **3 cara menambahkan file pada html :**
 
  1. eksternal CSS
