@@ -25,9 +25,9 @@ if (terdaftar === true) {
 A = B;
 // nama = b;
 // console.log("asal diakses = " + asal);
-console.log("array = " + nama);
+console.log("array = " + lengkap_arr[2]); // jawab 1. a.
 console.log("a adalah = " + A);
-console.log("b adalah = " + lengkap_arr[1]); // jawab 1. a.
+console.log("b adalah = " + B); 
 perkenalan();// jawab 1. c
 // jawab 1. d (run code)
 
@@ -40,10 +40,7 @@ perkenalan();// jawab 1. c
 //     sama dengan argumen di perkondisian “if” yaitu “true”.apa bila variable “terdaftar” bernilai “true” 
 //      maka isi dari perkondisian “if” akan di jalankan.  
 
-//  b. karna variable “a” berisi nilai “b” lebih dahulu jika selanjutnya variable “nama” di isi dengan 
-//     nilai “b” maka akan menyebabkan error karna nilai varibale “b” sudah menjadi milik variable “a” 
-//     menjadi satu reference yang sama. untuk mengambil nilai atau meneruskannya maka variable selanjutnya 
-//     harus mengambilnya dari variable “a”.
+//  b. karna variable "nama" berjenis constanta yang mana variable tersebut tidak dapat di ubah saat pertama kali di deklarasikan
 
 //  c. baris 28 error karna variable “asal” dalam console.log merupakan variable local yang berada dalam function 
 //     “perkenalan()” yang hanya bisa di akses apabila functon tersebut di jalankan.
