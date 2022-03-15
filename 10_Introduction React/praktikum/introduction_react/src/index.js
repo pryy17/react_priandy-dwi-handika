@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact_us from './pages/Contact_us';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <Home />
+    <About />
+    <Contact_us /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

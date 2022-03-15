@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-export default function Form() {
+export default function Contact_us() {
   return (
     <div>
       <div className="container-fluid">
         <div className="row d-flex align-items-center ">
           <div className="col-md-4 form-img">
             <div className="kotak w-100 text-center">
-              <img className="alta" src="asset/img/logo-ALTA-v2@2x.png" />
+              <img className="alta" src="asset/img/logo-ALTA-v2@2x.png" alt="gambar"/>
             </div>
           </div>
           <div className="col-md-8 isi-form">
