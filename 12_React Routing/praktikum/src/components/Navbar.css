@@ -1,0 +1,32 @@
+.topnav {
+  background-color: rgba(88, 72, 236, 0.219);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 4em;
+}
+
+/* Style the links inside the navigation bar */
+.topnav .list-nav {
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 1em;
+}
+.topnav .list-nav:hover {
+  background-color: rgb(98, 0, 255);
+  color: white;
+  padding: 0.5em 1em ;
+  border-radius: 50px;
+}
+.topnav .list-nav::active {
+  background-color: #f1571a;
+  border-radius: 50px;
+  width: auto;
+  color: white;
+  padding: 0.5em 1em ;
+}
