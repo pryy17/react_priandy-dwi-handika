@@ -1,0 +1,11 @@
+.toDoTitle {
+    border: solid black 1px;
+    border-radius: 50px;
+    margin: 0.5em 1em;
+    width: fit-content;
+}
+
+.toDoTitle > p {
+    padding: 0 1em;
+    
+}
