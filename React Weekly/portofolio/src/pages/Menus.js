@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Container, Row } from "react-bootstrap";
 import "./styles/Menus.css";
 const dataAssignment = [
   {
@@ -34,15 +34,15 @@ export default function Menus() {
   const assignment = dataAssignment;
 
   return (
-    <div className="menus-container d-flex align-items-center justify-content-center container-fluid">
+    <div id="menuAssignment" className="menus-container d-flex align-items-center justify-content-center container-fluid">
       <div>
         <Container>
           <Row className=" pb-5">
             <h1>My assignment</h1>
           </Row>
-          <Row className=" d-flex justify-content-center align-items-center gap-5" md={4}>
+          <Row className=" d-flex justify-content-center align-items-center gap-md-5 gap-1" md={4}>
             {assignment.map((item) => (
-              <Button size="lg">{item.name}</Button>
+              <Button className="animate-btn" size="lg">{item.name}</Button>
             ))}
           </Row>
         </Container>
