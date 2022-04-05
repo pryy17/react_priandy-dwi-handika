@@ -21,7 +21,7 @@ export default function Home() {
           </Row>
           <Row className=" px-5">
             <Col>
-              <Button variant="primary" ><a href="#menuAssignment"> Get Started</a></Button>
+              <a href="#menuAssignment"><Button variant="primary">Get Started</Button></a>
             </Col>
           </Row>
         </Container>
