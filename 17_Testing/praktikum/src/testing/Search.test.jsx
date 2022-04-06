@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 import Search from '../components/Search';
 import axios from 'axios';
 import { act } from 'react-dom/test-utils';
+import '@testing-library/jest-dom'
 jest.mock('axios');
 
 describe('FormCoding', () => {

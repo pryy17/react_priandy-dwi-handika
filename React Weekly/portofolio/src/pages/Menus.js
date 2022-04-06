@@ -1,37 +1,9 @@
 import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
 import "./styles/Menus.css";
-const dataAssignment = [
-  {
-    name: "Introduction React",
-  },
-  {
-    name: "React Fundamental",
-  },
-  {
-    name: "React Routing",
-  },
-  {
-    name: "Event Handling",
-  },
-  {
-    name: "React Hook",
-  },
-  {
-    name: "React Form",
-  },
-  {
-    name: "Global State Management and Data fetching",
-  },
-  {
-    name: "Testing",
-  },
-  {
-    name: "Deployment",
-  },
-];
-export default function Menus() {
-  const assignment = dataAssignment;
+
+export default function Menus(props) {
+  const assignment = props.dataMenu;
 
   return (
     <div id="menuAssignment" className="menus-container d-flex align-items-center justify-content-center container-fluid">
@@ -42,7 +14,7 @@ export default function Menus() {
           </Row>
           <Row className=" d-flex justify-content-center align-items-center gap-md-5 gap-1" md={4}>
             {assignment.map((item) => (
-              <Button className="animate-btn" size="lg">{item.name}</Button>
+              <Button className="animate-btn" size="lg" key={item.id}>{item.name}</Button>
             ))}
           </Row>
         </Container>

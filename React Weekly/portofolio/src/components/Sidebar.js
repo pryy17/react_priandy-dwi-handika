@@ -1,7 +1,10 @@
 import React from "react";
 import { Navbar, Container, Offcanvas, Nav, Col, Row } from "react-bootstrap";
 
-export default function sideBar() {
+export default function sideBar(props) {
+
+  const dataMenu = props.dataMenu;
+
   return (
     <div style={{
       position : "fixed",
@@ -31,8 +34,11 @@ export default function sideBar() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
+                {
+                  dataMenu.map((menu)=>(
+                    <Nav.Link href="#action1" className=" border-1" key={menu.id}>{menu.name}</Nav.Link>
+                  ))
+                }
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

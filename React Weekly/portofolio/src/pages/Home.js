@@ -3,7 +3,7 @@ import { Col, Row, Container, Button } from "react-bootstrap";
 import "./styles/Home.css";
 import Menus from "./Menus";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
       <div className="home-container d-flex align-items-center justify-content-center container-fluid">
@@ -27,7 +27,7 @@ export default function Home() {
         </Container>
       </div>
       <div>
-        <Menus />
+        <Menus dataMenu={props.dataMenu} />
       </div>
     </div>
   );
