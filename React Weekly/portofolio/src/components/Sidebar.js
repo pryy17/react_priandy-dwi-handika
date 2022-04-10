@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Offcanvas, Nav, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function sideBar(props) {
 
@@ -20,6 +21,9 @@ export default function sideBar(props) {
               <Navbar.Brand href="#" className="justify-content-start">
                 ReactJS
               </Navbar.Brand>
+            </Col>
+            <Col>
+              <Nav.Link><Link to="/">Home</Link></Nav.Link>
             </Col>
           </Row>
           <Navbar.Offcanvas

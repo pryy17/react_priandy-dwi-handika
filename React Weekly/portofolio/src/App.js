@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Home from './pages/Home';
 import { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
+import Assignment from "./pages/Assignment";
 
 const dataAssignment = [
   {
@@ -51,6 +52,12 @@ function App() {
       <Sidebar style={{position : "fixed"}} dataMenu = {dataMenu}/>
       <Routes>
         <Route path="/" element={<Home  dataMenu = {dataMenu}/>} />
+
+        {
+          dataMenu.map((item)=>(
+            <Route path={`/${item.id}`} element={ <Assignment dataMenu = {item} /> } />
+          ))
+        }
       </Routes>
     </div>
   );

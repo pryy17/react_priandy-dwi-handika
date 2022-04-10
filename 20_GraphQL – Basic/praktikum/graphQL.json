@@ -1,0 +1,37 @@
+// query untuk memanggil hanya siswa yang  memiliki status true
+
+query MyQuery {
+    kampus_merdeka_anggota(where: {keterangans: {status: {_eq: true}}}) {
+      nama
+    }
+}
+// query insert data keterangan
+mutation MyMutation {
+    insert_kampus_merdeka_keterangan(objects: [
+      {id: 5, id_anggota: 3, pelajaran: "Sistem informasi", nilai: 90, status: true}, 
+      {id: 6, id_anggota: 3, pelajaran: "React", nilai: 55, status: false}]) {
+      returning {
+        id
+        id_anggota
+        nilai
+        pelajaran
+        status
+      }
+    }
+  }
+  
+
+// query untuk mengupdate status false menjadi true
+mutation falsetotrue {
+    update_kampus_merdeka_keterangan(
+      _set: {status: true}, 
+      where: {
+        status: {_eq: false}
+      }) 
+    {
+      affected_rows
+      returning {
+        status
+      }
+    }
+  }

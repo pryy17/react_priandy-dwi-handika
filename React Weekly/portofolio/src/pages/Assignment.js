@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Carousel, Col, Button } from "react-bootstrap";
 import "./styles/Assignment.css";
 
-export default function Assignment() {
+export default function Assignment(props) {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -15,7 +15,7 @@ export default function Assignment() {
         <Row className="assignment-row">
           <Col className="assignment-title pt-5 d-flex justify-content-center">
             <div>  
-                <h1>Judul</h1>
+                <h1>{props.dataMenu.name}</h1>
                 <p>lorep impsum gafo gado vfdsksncksncksju</p>
                 <div><Button size="lg" >Try Here</Button></div>
             </div>
