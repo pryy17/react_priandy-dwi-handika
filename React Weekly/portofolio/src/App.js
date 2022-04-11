@@ -19,7 +19,7 @@ const dataAssignment = [
   {
     id: 3,
     name: "React Routing",
-    img : ["halaman about.jpeg", "halaman about-author.jpeg", "halaman Home.jpeg", "halaman not-found.jpeg"]
+    img : ["halaman about.jpeg", "halaman about-author.jpeg", "halaman Home.jpeg", "not-found.jpeg"]
   },
   {
     id: 4,
@@ -34,18 +34,22 @@ const dataAssignment = [
   {
     id: 6,
     name: "React Form",
+    img : ["reactform validation.jpeg"]
   },
   {
     id: 7,
     name: "Global State Management and Data fetching",
+    img : ["redux implementation.jpeg", "ss app.jpeg"]
   },
   {
     id: 8,
     name: "Testing",
+    img : ["formCodingTesting.jpeg", "searchTest.jpeg", "useHookTest.jpeg"]
   },
   {
     id: 9,
     name: "Deployment",
+    img : ["deployment.jpeg"]
   },
 ];
 
@@ -60,7 +64,7 @@ function App() {
 
         {
           dataMenu.map((item)=>(
-            <Route path={`/${item.id}`} element={ <Assignment dataMenu = {item} /> } />
+            <Route key={item.id} path={`/${item.id}`} element={ <Assignment dataMenu = {item} /> } />
           ))
         }
       </Routes>

@@ -40,7 +40,7 @@ export default function sideBar(props) {
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 {
                   dataMenu.map((menu)=>(
-                    <Nav.Link href="#action1" className=" border-1" key={menu.id}>{menu.name}</Nav.Link>
+                    <Nav.Link href="#action1" className=" border-1" key={menu.id}><Link to={`${menu.id}`}>{menu.name}</Link></Nav.Link>
                   ))
                 }
               </Nav>
