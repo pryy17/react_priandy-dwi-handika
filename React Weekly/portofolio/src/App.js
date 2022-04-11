@@ -9,22 +9,27 @@ const dataAssignment = [
   {
     id: 1,
     name: "Introduction React",
+    img: ["halaman ABOUT.jpeg", "halaman FORM.jpeg", "halaman HOME.jpeg"]
   },
   {
     id: 2,
     name: "React Fundamental",
+    img : ["ssreactfundamental.jpeg"]
   },
   {
     id: 3,
     name: "React Routing",
+    img : ["halaman about.jpeg", "halaman about-author.jpeg", "halaman Home.jpeg", "halaman not-found.jpeg"]
   },
   {
     id: 4,
     name: "Event Handling",
+    img : ["appTodo.jpeg", "eventHandler.jpeg"]
   },
   {
     id: 5,
     name: "React Hook",
+    img : ["appTodo.jpeg", "eventHandler.jpeg"]
   },
   {
     id: 6,
