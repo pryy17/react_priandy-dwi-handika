@@ -1,0 +1,29 @@
+.add-todo-form > label > .input-text {
+    border: none;
+    margin-left: 5px;
+    outline: none;
+}
+
+.add-todo-form > .submit {
+    border: none;
+    background-color: transparent;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.add-todo-form > .submit:hover {
+    color: blue;
+    font-weight: 500;
+}
+.add-todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-top: 5px;
+}
+.container-form {
+    border: solid rgba(0, 0, 0, 0.158) 1px;
+    border-radius: 50px;
+    width: 60%;
+    height: 2em;
+    margin: auto;
+}

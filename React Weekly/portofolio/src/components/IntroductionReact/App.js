@@ -9,15 +9,7 @@ import Contact_us from './pages/Contact_us';
 function App() {
   return (
     <div className="App">
-      <Router>
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} exact />
-              <Route path="/About" element={<About />} exact />
-              <Route path="/Form" element={<Contact_us />} exact/>
-            </Routes>
-          </main>
-        </Router>
+      <Home />
     </div>
   );
 }

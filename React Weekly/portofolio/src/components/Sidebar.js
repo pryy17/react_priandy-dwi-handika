@@ -8,7 +8,6 @@ export default function sideBar(props) {
 
   return (
     <div style={{
-      position : "fixed",
       width: "100%"
      }}>
       <Navbar bg="light" expand={false}>

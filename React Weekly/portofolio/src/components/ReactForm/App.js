@@ -125,7 +125,7 @@ function App() {
   }
   
   return (
-    <div className="App" style={{ textAlign: "left" }}>
+    <div className="Apps" style={{ textAlign: "left" }}>
       <form onSubmit={handleSubmit}>
         <label className="row">
           <div className="col">

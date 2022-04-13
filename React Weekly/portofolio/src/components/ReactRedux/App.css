@@ -1,8 +1,5 @@
-.Apps {
+.App {
   text-align: center;
-  width: 60%;
-  height: auto;
-  margin: auto;
 }
 
 .App-logo {
@@ -38,17 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.col {
-  margin-bottom: 1em;
-}
-
-input {
-  width: 100%;
-  height: 1.5em;
-}
-
-.errorMassage {
-  color: red ;
 }
