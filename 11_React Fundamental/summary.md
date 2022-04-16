@@ -1,7 +1,7 @@
 # Fundamental React
 
 - apa itu JSX.
-  sintaksis ini adalah sebuah sintaksis ekstensi untuk _JavaScript_. Kami sarankan menggunakannya dengan React untuk mendeskripsikan bagimana antarmuka pengguna seharusnya terlihat. JSX mungkin akan mengingatkan Anda dengan sebuah bahasa _templat_, bedanya adalah JSX telah dilengkapi dengan kekuatan penuh dari JavaScript.
+  sintaksis ini adalah sebuah sintaksis ekstensi untuk JavaScript. Kami sarankan menggunakannya dengan React untuk mendeskripsikan bagimana antarmuka pengguna seharusnya terlihat. JSX mungkin akan mengingatkan Anda dengan sebuah bahasa _templat_, bedanya adalah JSX telah dilengkapi dengan kekuatan penuh dari JavaScript.
 
 - React Component.
   Jika kita membuat aplikasi dengan **react** kita pasti selalu menggunakan **component**. **Component** adalah potongan kode kecil yang dapat di gunakan kembali (reusable) yang bertujuan agar user interface terpisah menjadi bagian-bagian kecil dan di satukan dan di render menjadi sebuah kode HTML . component pada react terbagi menjadi 2, function dan class.

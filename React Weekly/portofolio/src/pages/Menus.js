@@ -16,7 +16,7 @@ export default function Menus(props) {
           <Row className=" d-flex justify-content-center align-items-center gap-md-5 gap-1" md={4}>
             {assignment.map((item) => (
               
-              <Link to={`${item.id}`}><Button className="animate-btn" size="lg" key={item.id}>{item.name}</Button></Link>
+              <Link key={item.id} to={`${item.id}`}><Button className="animate-btn" size="lg" key={item.id}>{item.name}</Button></Link>
             ))}
           </Row>
         </Container>

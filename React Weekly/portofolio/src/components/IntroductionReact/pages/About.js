@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "./main.css";
 export default function About() {
   return (
     <div>
@@ -8,7 +9,7 @@ export default function About() {
             <div className="row align-items-center">
               <div className="col-lg-8 col-md-12 col-sm-12 col-12">
                 <div className="alterra">
-                  <a href="index.html"><img className="logo-atas" src="asset/img/logo-ALTA@2x.png" /></a>
+                  <a href="index.html"><img className="logo-atas" src="assets/img/logo-ALTA@2x.png" /></a>
                 </div>
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 col-12">
@@ -66,7 +67,7 @@ export default function About() {
             </div>
             <div className="col-lg-5 col-md-12 col-sm-12 col-12 pr-5">
               <div className="foto-id text-lg-right text-md-center text-sm-center">
-                <img src="asset/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg" />
+                <img src="assets/img/matthew-hamilton-tNCH0sKSZbA-unsplash.jpg" />
               </div>                
             </div>
           </div>
@@ -75,21 +76,21 @@ export default function About() {
           <div className="container">
             <div className="row pt-5 pb-5">
               <div className="pl-5 col-lg-5 col-md-4 col-sm-12 col-12 text-lg-left text-md-left text-sm-center">
-                <a href="index.html"><img className="logo-bawah" src="asset/img/logo-ALTA-v2.png" /></a>
+                <a href="index.html"><img className="logo-bawah" src="assets/img/logo-ALTA-v2.png" /></a>
               </div>
               <div className="col-lg-3 col-md-3 col-sm-12 col-12 text-lr-left text-md-center text-sm-center">
                 <h6>Social Media:</h6>
                 {/* <div class="col-3 text-center"> */}
-                <a href="https://www.facebook.com/AlterraAcademy"><img className="logo-sosmed" src="asset/img/ic_fb@2x.png" /></a>
+                <a href="https://www.facebook.com/AlterraAcademy"><img className="logo-sosmed" src="assets/img/ic_fb@2x.png" /></a>
                 {/* </div> */}
                 {/* <div class="col-3 text-center"> */}
-                <a href="https://twitter.com/"><img className="logo-sosmed" src="asset/img/ic-twitter@2x.png" /></a>
+                <a href="https://twitter.com/"><img className="logo-sosmed" src="assets/img/ic-twitter@2x.png" /></a>
                 {/* </div> */}
                 {/* <div class="col-3 text-center"> */}
-                <a href="https://www.instagram.com/alterra.academy/"><img className="logo-sosmed" src="asset/img/ic-instagram@2x.png" /></a>
+                <a href="https://www.instagram.com/alterra.academy/"><img className="logo-sosmed" src="assets/img/ic-instagram@2x.png" /></a>
                 {/* </div> */}
                 {/* <div class="col-3 text-center"> */}
-                <a href="https://id.linkedin.com/"><img className="logo-sosmed" src="asset/img/ic-linkedin@2x.png" /></a>
+                <a href="https://id.linkedin.com/"><img className="logo-sosmed" src="assets/img/ic-linkedin@2x.png" /></a>
                 {/* </div> */}
               </div>
               <div className="col-lg-4 col-md-5 col-sm-12 col-12 pt-3">

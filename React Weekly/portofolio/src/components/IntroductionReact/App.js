@@ -9,7 +9,7 @@ import Contact_us from './pages/Contact_us';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <About />
     </div>
   );
 }

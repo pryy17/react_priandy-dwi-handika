@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Carousel, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./styles/Assignment.css";
 
 export default function Assignment(props) {
@@ -15,9 +16,9 @@ export default function Assignment(props) {
           <Col className="assignment-title pt-5 d-flex justify-content-center">
             <div>
               <h1>{props.dataMenu.name}</h1>
-              <p>lorep impsum gafo gado vfdsksncksncksju</p>
+              <p>{props.dataMenu.desc}</p>
               <div>
-                <Button size="lg">Try Here</Button>
+                <Button size="lg"><Link to={`/${props.dataMenu.url}`} style={{ color: "white", textDecoration : "none"}}>Try Here</Link></Button>
               </div>
             </div>
           </Col>

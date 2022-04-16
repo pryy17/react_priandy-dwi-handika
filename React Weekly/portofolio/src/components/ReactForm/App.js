@@ -1,4 +1,4 @@
-import "./App.css";
+import "./AppForm.css";
 import React, { useState, useRef } from "react";
 
 function App() {
@@ -127,8 +127,8 @@ function App() {
   return (
     <div className="Apps" style={{ textAlign: "left" }}>
       <form onSubmit={handleSubmit}>
-        <label className="row">
-          <div className="col">
+        <label className="baris">
+          <div className="kolom">
             Nama Lengkap : <br />
             <input
               type="text"
@@ -138,7 +138,7 @@ function App() {
             />
             <p className="errorMassage">{errorMassage.nama}</p>
           </div>
-          <div className="col">
+          <div className="kolom">
             Email : <br />
             <input
               type="text"
@@ -148,7 +148,7 @@ function App() {
             />
             <p className="errorMassage">{errorMassage.email}</p>
           </div>
-          <div className="col">
+          <div className="kolom">
             No Handphone: <br />
             <input
               type="text"
@@ -160,7 +160,7 @@ function App() {
             />
             <p className="errorMassage">{errorMassage.noHandphone}</p>
           </div>
-          <div className="col">
+          <div className="kolom">
             Latar Belakang Pendidikan : <br />
             <input
               type="radio"
@@ -182,7 +182,7 @@ function App() {
             Non IT
             <p className="errorMassage">{errorMassage.pendidikan}</p>
           </div>
-          <div className="col">
+          <div className="kolom">
             Kelas Coding Yang Di Pilih : <br />
             <select name="kelas" value={data.kelas} onChange={handleChange}>
               <option value="">Pilih Salah Satu Program</option>
@@ -193,7 +193,7 @@ function App() {
             <p className="errorMassage">{errorMassage.kelas}</p>
           </div>
 
-          <div className="col">
+          <div className="kolom">
             Foto Surat Kesungguhan :<br />
             <input
               type="file"
@@ -203,7 +203,7 @@ function App() {
             <p className="errorMassage">{errorMassage.suratKesungguhan}</p>
           </div>
 
-          <div className="col">
+          <div className="kolom">
             Harapan Untuk Coding Bootcamp ini: <br />
             <textarea
               value={data.harapan}
@@ -213,7 +213,9 @@ function App() {
             />
           </div>
         </label>
-        <button>SUBMIT</button>
+        <div> 
+          <button>SUBMIT</button>
+        </div>
       </form>
         <button onClick={()=>{handleReset()}}>RESET</button>
     </div>

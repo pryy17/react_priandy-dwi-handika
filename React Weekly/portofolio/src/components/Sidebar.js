@@ -11,18 +11,17 @@ export default function sideBar(props) {
       width: "100%"
      }}>
       <Navbar bg="light" expand={false}>
-        <Container fluid>
-          <Row className="justify-content-md-start">
+          <Row className="w-100">
             <Col>
               <Navbar.Toggle aria-controls="offcanvasNavbar" />
             </Col>
-            <Col>
-              <Navbar.Brand href="#" className="justify-content-start">
+            <Col >
+              <Navbar.Brand href="#" className="w-100">
                 ReactJS
               </Navbar.Brand>
             </Col>
-            <Col>
-              <Nav.Link><Link to="/">Home</Link></Nav.Link>
+            <Col xs={10} style={{ textAlign: "right"  }} >
+              <Nav.Link><Link to="/" style={{ textDecoration : "none", color : "black" }}>HOME</Link></Nav.Link>
             </Col>
           </Row>
           <Navbar.Offcanvas
@@ -32,7 +31,7 @@ export default function sideBar(props) {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel">
-                Offcanvas
+                ReactJS
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -45,7 +44,6 @@ export default function sideBar(props) {
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
-        </Container>
       </Navbar>
     </div>
   );
