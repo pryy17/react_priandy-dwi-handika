@@ -1,0 +1,11 @@
+# Subscribtion - graphQL
+
+Seperti kueri, Subscribtionmemungkinkan Anda mengambil data. Tidak seperti kueri, langganan adalah operasi jangka panjang yang dapat mengubah hasilnya seiring waktu. Mereka dapat mempertahankan koneksi aktif ke server GraphQL Anda (paling sering melalui WebSocket), memungkinkan server untuk mendorong pembaruan ke hasil Subscribtion. Subscribtion berguna untuk memberi tahu klien Anda secara real time tentang perubahan pada data back-end, seperti pembuatan objek baru atau pembaruan bidang penting.
+
+- **kapan menggunakan subscibtion**
+
+  - Perubahan kecil dan bertahap pada objek besar. Berulang kali polling untuk objek besar itu mahal, terutama ketika sebagian besar bidang objek jarang berubah. Sebagai gantinya, Anda dapat mengambil status awal objek dengan kueri, dan server Anda dapat secara proaktif mendorong pembaruan ke masing-masing bidang saat terjadi.
+  - Pembaruan waktu nyata dengan latensi rendah. Misalnya, klien aplikasi obrolan ingin menerima pesan baru segera setelah tersedia.
+
+- **setting subscribtion** - Untuk menjalankan langganan melalui WebSocket, Anda dapat menambahkan GraphQLWsLink ke rantai tautan Anda. Tautan ini memerlukan library graphql-ws. - Impor dan inisialisasi objek GraphQLWsLink dalam file proyek yang sama tempat Anda menginisialisasi ApolloClient
+  Ganti nilai opsi url dengan titik akhir WebSocket khusus langganan server GraphQL Anda. Jika Anda menggunakan Apollo Server, lihat Mengatur titik akhir langganan. - library @apollo/client menyediakan fungsi terpisah yang memungkinkan Anda menggunakan salah satu dari dua Tautan yang berbeda, sesuai dengan hasil pemeriksaan boolean. Contoh berikut memperluas yang sebelumnya dengan menginisialisasi GraphQLWsLink dan HttpLink. Kemudian menggunakan fungsi split untuk menggabungkan kedua Tautan tersebut menjadi satu Tautan yang menggunakan satu atau yang lain sesuai dengan jenis operasi yang dijalankan. - etelah Anda menentukan rantai tautan Anda, Anda memberikannya kepada Klien Apollo melalui opsi konstruktor tautan - menggunakan useSubscription Hook Klien Apollo untuk menjalankan langganan dari React. Seperti useQuery, useSubscription mengembalikan objek dari Apollo Client yang berisi pemuatan, kesalahan, dan properti data yang dapat Anda gunakan untuk merender UI Anda.
