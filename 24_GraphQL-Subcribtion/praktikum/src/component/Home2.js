@@ -84,13 +84,14 @@ export default function Home2() {
 
     // const { loading, error, data : getData, refetch } = useQuery(getDataApi);
     const [mutationInsert, {data : insertData, loading: insertLoading}] = useMutation(mutationInsertGraph);
-    const [mutationDelete, {data : deleteData}] = useMutation(mutationDeleteGraph);
-    const [mutationUpdate, {data : updateData}] = useMutation(mutationUpdateGraph);
+    const [mutationDelete, {data : deleteData, loading : deleteLoading}] = useMutation(mutationDeleteGraph);
+    const [mutationUpdate, {data : updateData, loading : updateLoading}] = useMutation(mutationUpdateGraph);
     const {data : getData, loading, error} = useSubscription(subscribtionData);
 
     if (loading) return <p>Loading...</p>;
-
-    
+    if (insertLoading) return <p>Loading...</p>
+    if (deleteLoading) return <p>Loading...</p>
+    if (updateLoading) return <p>Loading...</p>
   
 
  

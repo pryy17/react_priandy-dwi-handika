@@ -1,0 +1,174 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "nama": "Makanan"
+    },
+    {
+      "id": 2,
+      "nama": "Minuman"
+    },
+    {
+      "id": 3,
+      "nama": "Cemilan"
+    }
+  ],
+  "products": [
+        {
+          "id": 1,
+          "kode": "K-01",
+          "nama": "Bakmi Bangka",
+          "harga": 16000,
+          "is_ready": true,
+          "gambar": "bakmi bangka.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 2,
+          "kode": "K-02",
+          "nama": "Bubur Ayam Barito",
+          "harga": 14000,
+          "is_ready": true,
+          "gambar": "bubur ayam barito.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 3,
+          "kode": "K-03",
+          "nama": "Gulai Sapi",
+          "harga": 12000,
+          "is_ready": true,
+          "gambar": "gulai sapi.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 4,
+          "kode": "K-04",
+          "nama": "Joni Steak",
+          "harga": 20000,
+          "is_ready": true,
+          "gambar": "joni steak.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 5,
+          "kode": "K-05",
+          "nama": "Indomie Mercon",
+          "harga": 13000,
+          "is_ready": true,
+          "gambar": "indomie mercon.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 6,
+          "kode": "K-06",
+          "nama": "nasi bebek",
+          "harga": 20000,
+          "is_ready": true,
+          "gambar": "nasi bebek.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 7,
+          "kode": "K-07",
+          "nama": "Nasi Goreng Kambing",
+          "harga": 14000,
+          "is_ready": true,
+          "gambar": "nasi goreng kambing.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 8,
+          "kode": "K-08",
+          "nama": "Nasi Goreng Seafood",
+          "harga": 15000,
+          "is_ready": true,
+          "gambar": "nasi goreng seafood.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 9,
+          "kode": "K-09",
+          "nama": "Nasi Ulam",
+          "harga": 5000,
+          "is_ready": true,
+          "gambar": "nasi ulam.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 10,
+          "kode": "K-010",
+          "nama": "Roti Bakar",
+          "harga": 15000,
+          "is_ready": true,
+          "gambar": "roti bakar.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 11,
+          "kode": "K-011",
+          "nama": "Sate Maranggi",
+          "harga": 15000,
+          "is_ready": true,
+          "gambar": "sate maranggi.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 12,
+          "kode": "K-012",
+          "nama": "Sate Taichan",
+          "harga": 17000,
+          "is_ready": true,
+          "gambar": "sate taichan.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        },
+        {
+          "id": 13,
+          "kode": "K-013",
+          "nama": "Soto Betawi",
+          "harga": 5000,
+          "is_ready": true,
+          "gambar": "soto betawi.jpg",
+          "category": {
+            "id": 1,
+            "nama": "Makanan"
+          }
+        }
+  ]
+}
